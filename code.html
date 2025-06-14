@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Tic Tac Toe</h1>
+      <div class="subtitle">Play against a friend or AI opponent</div>
+      <form class="mode-select" role="radiogroup" aria-label="Game mode selection">
+        <input type="radio" id="mode-two-player" name="mode" value="two-player" checked />
+        <label for="mode-two-player" tabindex="0">Two Players</label>
+        <input type="radio" id="mode-ai" name="mode" value="ai" />
+        <label for="mode-ai" tabindex="0">Play AI</label>
+      </form>
+    </header>
+
+    <section class="board" role="grid" aria-label="Tic tac toe board" aria-live="polite" aria-relevant="all" tabindex="0">
+      <button class="square" data-index="0" aria-label="Cell 1" role="gridcell"></button>
+      <button class="square" data-index="1" aria-label="Cell 2" role="gridcell"></button>
+      <button class="square" data-index="2" aria-label="Cell 3" role="gridcell"></button>
+      <button class="square" data-index="3" aria-label="Cell 4" role="gridcell"></button>
+      <button class="square" data-index="4" aria-label="Cell 5" role="gridcell"></button>
+      <button class="square" data-index="5" aria-label="Cell 6" role="gridcell"></button>
+      <button class="square" data-index="6" aria-label="Cell 7" role="gridcell"></button>
+      <button class="square" data-index="7" aria-label="Cell 8" role="gridcell"></button>
+      <button class="square" data-index="8" aria-label="Cell 9" role="gridcell"></button>
+    </section>
+
+    <div class="status" aria-live="polite" id="game-status" role="status"></div>
+
+    <button class="reset-button" id="reset-button" aria-label="Restart game">Restart Game</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
